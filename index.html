@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Sharon Ponsily C – Full Stack Developer, Java Developer & UI/UX Designer. Developer's Grimoire Portfolio."/>
+<meta name="keywords" content="Sharon Ponsily, Full Stack Developer, Java, React, UI/UX, Portfolio"/>
+<title>Sharon Ponsily C | Developer's Grimoire</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- BACKGROUND -->
+<canvas id="starfield"></canvas>
+<div class="fog-layer fog1"></div>
+<div class="fog-layer fog2"></div>
+<div class="nebula-glow"></div>
+<div class="castle-silhouette"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="magic-particles" id="magicParticles"></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">✨ Ponsily's Grimoire</div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about" class="nav-link">Library</a></li>
+    <li><a href="#interests" class="nav-link">Interests</a></li>
+    <li><a href="#skills" class="nav-link">Potions</a></li>
+    <li><a href="#experience" class="nav-link">Journey</a></li>
+    <li><a href="#projects" class="nav-link">Adventures</a></li>
+    <li><a href="#awards" class="nav-link">Achievements</a></li>
+    <li><a href="#education" class="nav-link">Education</a></li>
+    <li><a href="#certifications" class="nav-link">Scrolls</a></li>
+    <li><a href="#contact" class="nav-link">Owl Post</a></li>
+  </ul>
+  <a href="assests/resume.pdf" class="btn-resume" download>📜 Resume</a>
+</nav>
+
+<!-- WELCOME SCROLL -->
+<!-- =========================
+     MAGICAL WELCOME SCROLL
+========================= -->
+
+<div class="welcome-scroll" id="welcomeScroll">
+
+  <div class="magic-scroll">
+
+```
+<!-- Wax Seal -->
+<div class="wax-seal">✨</div>
+
+<!-- Ancient Paper -->
+<div class="scroll-body">
+
+  <h2>📜 An Invitation Awaits</h2>
+
+  <p>
+  Welcome to the <strong>Developer's Grimoire</strong>
+  of <strong>Sharon Ponsily C</strong>.
+  </p>
+
+  <p>
+  Within these enchanted pages lies a journey of
+  learning, creativity, and endless curiosity.
+  </p>
+
+  <p class="scroll-quote">
+  "May your curiosity guide you through every chapter."
+  </p>
+
+  <button id="enterLibrary">
+    ✨ Begin the Journey
+  </button>
+
+</div>
+```
+
+  </div>
+
+</div>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section id="hero" class="hero">
+  <div class="hero-inner">
+
+    <!-- LEFT -->
+    <div class="hero-left reveal">
+      <p class="hero-tag"><span class="sparkle"></span> WELCOME TO</p>
+      <h1 class="hero-title">Sharon Ponsily's<br><span class="gold-text">Grimoire</span></h1>
+      <!--<h2 class="hero-name">Sharon Ponsily C</h2>-->
+      <h3 class="hero-role" id="heroRole">Full Stack Developer</h3>
+      <p class="hero-desc">Computer Science Engineering student (CGPA: 8.23/10) with hands-on experience in Full Stack Development, Java Engineering, UI/UX Design, Artificial Intelligence, and Generative AI technologies. Completed six internships while building AI-powered applications, scholarship platforms, weather prediction systems, and assistive technologies.</p>
+
+      <div class="hero-badges">
+        <span class="hero-badge">🏆 6 Internships</span>
+        <span class="hero-badge">📜 15+ Certifications</span>
+        <span class="hero-badge">💻 Full Stack Developer</span>
+        <span class="hero-badge">🤖 Generative AI Enthusiast</span>
+        <span class="hero-badge">🎨 UI/UX Designer</span>
+        <span class="hero-badge">🔐 Cybersecurity Learner</span>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-card glass-card"><span class="stat-num" data-target="6">0</span><span class="stat-label">Internships</span></div>
+        <div class="stat-card glass-card"><span class="stat-num" data-target="5">0</span><span class="stat-label">Projects</span></div>
+        <div class="stat-card glass-card"><span class="stat-num" data-target="15" data-suffix="+">0</span><span class="stat-label">Certifications</span></div>
+        <div class="stat-card glass-card"><span class="stat-num" data-target="8.23" data-decimal="true">0</span><span class="stat-label">CGPA</span></div>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">🪄 Explore Portfolio</a>
+        <a href="assests/resume.pdf" class="btn-secondary" download>📜 Download Resume</a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://github.com/CSharon27" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/sharon-ponsily-c" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:sharonponsily@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+918072526175" class="social-icon" title="Phone"><i class="fas fa-phone"></i></a>
+      </div>
+
+      <div class="tech-pills">
+        <span class="pill">Java</span><span class="pill">Spring Boot</span><span class="pill">React.js</span>
+        <span class="pill">React Native</span><span class="pill">Node.js</span><span class="pill">MySQL</span>
+        <span class="pill">REST APIs</span><span class="pill">Python</span><span class="pill">Figma</span><span class="pill">Git</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="hero-right reveal reveal-right">
+
+      <!-- Anime Portrait -->
+      <div class="portrait-wrapper" id="portraitWrapper">
+        <div class="portrait-frame" id="portraitFrame">
+          <div class="frame-ornament top-left"></div>
+          <div class="frame-ornament top-right"></div>
+          <div class="frame-ornament bottom-left"></div>
+          <div class="frame-ornament bottom-right"></div>
+          <div class="portrait-glow"></div>
+          <div class="portrait-inner">
+            <img src="assests/sharon_portrait.png" alt="Sharon Ponsily C in magical library" class="portrait-img" loading="lazy"/>
+          </div>
+          <div class="portrait-particles" id="portraitParticles"></div>
+        </div>
+        <div class="tech-badge badge-java float-badge">🔮Java</div>
+        <div class="tech-badge badge-react float-badge">🔮React</div>
+        <div class="tech-badge badge-node float-badge">🔮Node.js</div>
+        <div class="tech-badge badge-figma float-badge">🔮Figma</div>
+        <div class="tech-badge badge-ai float-badge">🔮AI</div>
+      </div>
+
+      <!-- THE LIVING GRIMOIRE -->
+      <div class="grimoire-wrapper" id="grimoireWrapper">
+        <div class="grimoire-3d" id="grimoire3d">
+          <!-- Book closed state -->
+          <div class="grimoire-closed" id="grimoireClosed">
+            <div class="gc-cover">
+              <div class="gc-emblem">📖</div>
+              <h3 class="gc-title">Developer's<br>Grimoire</h3>
+              <p class="gc-sub">Sharon Ponsily C</p>
+              <div class="gc-runes"><span>✦</span><span>◆</span><span>✦</span></div>
+              <div class="gc-lines"><span></span><span></span><span></span></div>
+            </div>
+            <div class="gc-spine"></div>
+            <div class="gc-pages-stack">
+              <div class="gp gp1"></div>
+              <div class="gp gp2"></div>
+              <div class="gp gp3"></div>
+            </div>
+          </div>
+          <!-- Book open state (on hover) -->
+          <div class="grimoire-open" id="grimoireOpen">
+            <div class="go-left-page">
+              <p class="go-heading">🪄 About Sharon</p>
+              <p class="go-text">Full Stack Developer · Java Engineer · UI/UX Designer · AI Explorer</p>
+              <p class="go-text">CGPA 8.23 · 6 Internships · 5 Projects · 15+ Certifications</p>
+              <div class="go-rune">◆ ✦ ◆</div>
+            </div>
+            <div class="go-spine"></div>
+            <div class="go-right-page">
+              <p class="go-heading">📜 Resume</p>
+              <p class="go-text">Download to view full academic & professional profile</p>
+              <a href="assests/resume.pdf" class="go-btn" download>🔮 Download</a>
+              <div class="go-rune">✦ ◆ ✦</div>
+            </div>
+            <div class="go-particles" id="goParticles"></div>
+          </div>
+        </div>
+        <div class="grimoire-shadow"></div>
+        <div class="grimoire-particles" id="grimoireParticles"></div>
+        <p class="grimoire-hint">🪄 Hover to open</p>
+      </div>
+
+    
+
+    </div>
+  </div>
+  <div class="scroll-indicator"><div class="scroll-dot"></div><span>Scroll to explore</span></div>
+</section>
+
+<!-- ══════════════ ABOUT ══════════════ -->
+<section id="about" class="section">
+ 
+  <div class="section-header reveal">
+    <span class="section-tag">📚 The Library</span>
+    <h2 class="section-title">About Me</h2>
+    <div class="title-divider"><span></span><i class="fas fa-star"></i><span></span></div>
+  </div>
+  <div class="about-container">
+    <div class="about-text glass-card reveal">
+      <p>Computer Science Engineering student (CGPA: 8.23/10) with hands-on experience in Full Stack Development, Java Engineering, UI/UX Design, Artificial Intelligence, and Generative AI technologies.</p>
+      <p>Completed six internships across software development, web development, Java engineering, and UI/UX design while building projects involving AI-powered applications, scholarship platforms, weather prediction systems, and assistive technologies.</p>
+      <p>Passionate about creating scalable, user-centric digital solutions and continuously learning emerging technologies including Generative AI, Cybersecurity, IAM, NLP, and Robotic Process Automation.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-box glass-card reveal"><span class="about-icon">📍</span><div><strong>Location</strong><p>Chennai, India</p></div></div>
+      <div class="about-box glass-card reveal"><span class="about-icon">🎓</span><div><strong>Degree</strong><p>B.E Computer Science Engineering</p></div></div>
+      <div class="about-box glass-card reveal"><span class="about-icon">🏆</span><div><strong>CGPA</strong><p>8.23 / 10</p></div></div>
+      <div class="about-box glass-card reveal"><span class="about-icon">💼</span><div><strong>Status</strong><p>Open to Opportunities</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ INTERESTS ══════════════ -->
+<section id="interests" class="section">
+  <div class="section-header reveal">
+    <span class="section-tag">🪄 Magical Affinities</span>
+    <h2 class="section-title">Areas of Interest</h2>
+    <div class="title-divider"><span></span><i class="fas fa-star"></i><span></span></div>
+  </div>
+  <div class="interests-grid reveal">
+    <span class="interest-pill">🤖 Artificial Intelligence</span>
+    <span class="interest-pill">✨ Generative AI</span>
+    <span class="interest-pill">💻 Full Stack Development</span>
+    <span class="interest-pill">☕ Java Development</span>
+    <span class="interest-pill">🎨 UI/UX Design</span>
+    <span class="interest-pill">🔐 Cybersecurity</span>
+    <span class="interest-pill">🛡️ Identity &amp; Access Management</span>
+    <span class="interest-pill">🗣️ Natural Language Processing</span>
+    <span class="interest-pill">🤝 Robotic Process Automation</span>
+    <span class="interest-pill">📊 Data Science</span>
+    <span class="interest-pill">☁️ Cloud Technologies</span>
+  </div>
+</section>
+
+<!-- ══════════════ SKILLS ══════════════ -->
+<section id="skills" class="section">
+  
+  <div class="section-header reveal">
+    <span class="section-tag">🧪 Potion Laboratory</span>
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="title-divider"><span></span><i class="fas fa-star"></i><span></span></div>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card glass-card reveal" data-tilt><div class="skill-icon">⚡</div><h4>Languages</h4><div class="skill-tags"><span>Java</span><span>JavaScript</span><span>Python</span><span>SQL</span><span>JSON</span><span>C++</span></div></div>
+    <div class="skill-card glass-card reveal" data-tilt><div class="skill-icon">🖥️</div><h4>Frontend</h4><div class="skill-tags"><span>HTML5</span><span>CSS3</span><span>React.js</span><span>React Native</span><span>Responsive Design</span></div></div>
+    <div class="skill-card glass-card reveal" data-tilt><div class="skill-icon">⚙️</div><h4>Backend</h4><div class="skill-tags"><span>Node.js</span><span>Spring Boot</span><span>REST APIs</span><span>MVC Architecture</span></div></div>
+    <div class="skill-card glass-card reveal" data-tilt><div class="skill-icon">🗄️</div><h4>Database &amp; Cloud</h4><div class="skill-tags"><span>MySQL</span><span>Azure SQL</span><span>Schema Design</span><span>CRUD Operations</span><span>Database Design</span></div></div>
+    <div class="skill-card glass-card reveal" data-tilt><div class="skill-icon">🤖</div><h4>AI &amp; Generative AI</h4><div class="skill-tags"><span>Artificial Intelligence</span><span>Generative AI</span><span>OpenAI API</span><span>GPT Models</span><span>Prompt Engineering</span><span>NLP</span></div></div>
+    <div class="skill-card glass-card reveal" data-tilt><div class="skill-icon">🔐</div><h4>Security &amp; Automation</h4><div class="skill-tags"><span>Cybersecurity</span><span>IAM</span><span>Robotic Process Automation</span><span>Data Science</span></div></div>
+    <div class="skill-card glass-card reveal" data-tilt><div class="skill-icon">🎨</div><h4>Design</h4><div class="skill-tags"><span>Figma</span><span>Prototyping</span><span>User Flows</span><span>WCAG Accessibility</span></div></div>
+    <div class="skill-card glass-card reveal" data-tilt><div class="skill-icon">🛠️</div><h4>Tools &amp; Practices</h4><div class="skill-tags"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Arduino IDE</span><span>Agile</span><span>TDD</span></div></div>
+  </div>
+</section>
+
+<!-- ══════════════ EXPERIENCE ══════════════ -->
+<section id="experience" class="section">
+  <div class="section-header reveal">
+    <span class="section-tag">⚔ Journey Through the Guilds</span>
+    <h2 class="section-title">Experience</h2>
+    <div class="title-divider"><span></span><i class="fas fa-star"></i><span></span></div>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content glass-card">
+        <span class="timeline-year">2025</span>
+        <h3>DVein Innovations</h3><h4>Java Full Stack Developer Intern</h4>
+        <p class="timeline-date">📅 Aug 2025 – Sep 2025</p>
+        <ul><li>Developed backend modules using Java and Spring Boot</li><li>Implemented REST APIs and business logic with MVC architecture</li><li>Participated in code reviews and Agile development workflows</li></ul>
+        <div class="tech-tags"><span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>Git</span></div>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content glass-card">
+        <span class="timeline-year">2025</span>
+        <h3>CodeAlpha</h3><h4>Java Developer Intern</h4>
+        <p class="timeline-date">📅 Aug 2025 – Sep 2025</p>
+        <ul><li>Developed reusable Java applications with OOP principles</li><li>Optimized logic-intensive modules and integrated APIs</li></ul>
+        <div class="tech-tags"><span>Java</span><span>OOP</span><span>APIs</span></div>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content glass-card">
+        <span class="timeline-year">2025</span>
+        <h3>Future Interns</h3><h4>Full Stack Web Developer Intern</h4>
+        <p class="timeline-date">📅 Jul 2025 – Aug 2025</p>
+        <ul><li>Developed web features using React and Node.js</li><li>Managed MySQL databases and integrated third-party APIs</li></ul>
+        <div class="tech-tags"><span>React</span><span>Node.js</span><span>MySQL</span></div>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content glass-card">
+        <span class="timeline-year">2024</span>
+        <h3>NoviTech R&amp;D Pvt Ltd</h3><h4>Full Stack Developer Intern</h4>
+        <p class="timeline-date">📅 Oct 2024 – Nov 2024</p>
+        <ul><li>Developed responsive web applications and integrated APIs</li><li>Collaborated in Agile sprint planning and development cycles</li></ul>
+        <div class="tech-tags"><span>JavaScript</span><span>Node.js</span><span>MySQL</span></div>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content glass-card">
+        <span class="timeline-year">2024</span>
+        <h3>Grantley Edutech</h3><h4>Web Developer Intern</h4>
+        <p class="timeline-date">📅 Sep 2024 – Nov 2024</p>
+        <ul><li>Designed responsive web pages and improved UI consistency</li><li>Enhanced cross-browser compatibility and load performance</li></ul>
+        <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content glass-card">
+        <span class="timeline-year">2024</span>
+        <h3>CodSoft</h3><h4>UI/UX Designer Intern</h4>
+        <p class="timeline-date">📅 Aug 2024 – Sep 2024</p>
+        <ul><li>Created wireframes and high-fidelity prototypes in Figma</li><li>Applied WCAG accessibility and design principles</li></ul>
+        <div class="tech-tags"><span>Figma</span><span>UX Design</span><span>Wireframes</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ PROJECTS ══════════════ -->
+<section id="projects" class="section">
+  
+  <div class="section-header reveal">
+    <span class="section-tag">🏰 Magical Adventures</span>
+    <h2 class="section-title">Projects</h2>
+    <div class="title-divider"><span></span><i class="fas fa-star"></i><span></span></div>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card glass-card reveal" data-tilt>
+      <div class="project-num">01</div><div class="project-glow"></div>
+      <h3>Scholar Link Hub</h3>
+      <p>AI-powered scholarship platform connecting students and donors using geolocation matching and chatbot integration.</p>
+      <div class="tech-tags"><span>Node.js</span><span>MySQL</span><span>AI Chatbot</span><span>REST APIs</span></div>
+      
+    </div>
+    <div class="project-card glass-card reveal" data-tilt>
+      <div class="project-num">02</div><div class="project-glow"></div>
+      <h3>AI Resume Evaluation System</h3>
+      <p>Resume parser that ranks candidates using Artificial Intelligence, scoring profiles against job descriptions.</p>
+      <div class="tech-tags"><span>Python</span><span>Machine Learning</span><span>AI</span></div>
+      
+    </div>
+    <div class="project-card glass-card reveal" data-tilt>
+      <div class="project-num">03</div><div class="project-glow"></div>
+      <h3>Weather Crop Prediction App</h3>
+      <p>Cross-platform application providing real-time weather forecasts and AI-driven crop recommendations for farmers.</p>
+      <div class="tech-tags"><span>React Native</span><span>Node.js</span><span>Weather API</span></div>
+      
+    </div>
+    <div class="project-card glass-card reveal" data-tilt>
+      <div class="project-num">04</div><div class="project-glow"></div>
+      <h3>VR Navigation Assistant</h3>
+      <p>Smart navigation system for visually impaired users using Arduino, ultrasonic sensors, and haptic feedback.</p>
+      <div class="tech-tags"><span>Arduino</span><span>C++</span><span>Sensors</span></div>
+      
+    </div>
+    <div class="project-card glass-card reveal" data-tilt>
+      <div class="project-num">05</div><div class="project-glow"></div>
+      <h3>Food Ordering Prototype</h3>
+      <p>Responsive food ordering and e-commerce prototype with pixel-perfect UI for web and mobile devices.</p>
+      <div class="tech-tags"><span>Figma</span><span>HTML</span><span>CSS</span></div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ ACHIEVEMENTS ══════════════ -->
+<section id="awards" class="section">
+  
+  <div class="section-header reveal">
+    <span class="section-tag">🏆 Hall of Achievements</span>
+    <h2 class="section-title">Achievements</h2>
+    <div class="title-divider"><span></span><i class="fas fa-star"></i><span></span></div>
+  </div>
+  <div class="awards-grid">
+    <div class="award-card glass-card reveal"><span class="award-icon">🏆</span><p>Best Paper Award</p></div>
+    <div class="award-card glass-card reveal"><span class="award-icon">🥇</span><p>SIH Video Editing Winner</p></div>
+    <div class="award-card glass-card reveal"><span class="award-icon">⚡</span><p>24-Hour Hackathon Winner</p></div>
+    <div class="award-card glass-card reveal"><span class="award-icon">🚀</span><p>Innovators Day Project Showcase</p></div>
+    <div class="award-card glass-card reveal"><span class="award-icon">💡</span><p>Smart India Hackathon Internal Round</p></div>
+    <div class="award-card glass-card reveal"><span class="award-icon">🎯</span><p>Technical Symposium Lead</p></div>
+    <div class="award-card glass-card reveal"><span class="award-icon">🌟</span><p>Supporting Rotaractor Award</p></div>
+  </div>
+</section>
+
+<!-- ══════════════ EDUCATION ══════════════ -->
+<section id="education" class="section">
+  <div class="section-header reveal">
+    <span class="section-tag">🎓 Academy Records</span>
+    <h2 class="section-title">Education</h2>
+    <div class="title-divider"><span></span><i class="fas fa-star"></i><span></span></div>
+  </div>
+  <div class="education-grid">
+    <div class="edu-card glass-card reveal" data-tilt>
+      <div class="edu-icon">🏛️</div>
+      <h3>Anand Institute of Higher Technology</h3>
+      <h4>B.E Computer Science Engineering</h4>
+      <p class="edu-grade">⭐ CGPA: 8.23 / 10</p>
+      <p class="edu-year">📅 Nov 2022 – May 2026</p>
+    </div>
+    <div class="edu-card glass-card reveal" data-tilt>
+      <div class="edu-icon">📚</div>
+      <h3>Little Flower Matriculation Higher Secondary School</h3>
+      <h4>Higher Secondary Certificate – Bio-Mathematics</h4>
+      <p class="edu-grade">⭐ Grade: 84%</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CERTIFICATIONS ══════════════ -->
+<section id="certifications" class="section">
+  <div class="section-header reveal">
+    <span class="section-tag">📜 Scrolls of Mastery</span>
+    <h2 class="section-title">Certifications</h2>
+    <div class="title-divider"><span></span><i class="fas fa-star"></i><span></span></div>
+  </div>
+
+  <div class="cert-category reveal">
+    <h3 class="cert-cat-title">Cloud &amp; Database</h3>
+    <div class="certs-grid">
+      <div class="cert-card glass-card"><div class="cert-icon">☁️</div><p>Microsoft Azure SQL</p><span>Microsoft</span></div>
+      <div class="cert-card glass-card"><div class="cert-icon">🌐</div><p>Intro to Generative AI</p><span>Google Cloud</span></div>
+    </div>
+  </div>
+
+  <div class="cert-category reveal">
+    <h3 class="cert-cat-title">AI &amp; Generative AI</h3>
+    <div class="certs-grid">
+      <div class="cert-card glass-card"><div class="cert-icon">🤖</div><p>Introduction to Artificial Intelligence</p><span>IBM</span></div>
+      <div class="cert-card glass-card"><div class="cert-icon">🧠</div><p>Introduction to OpenAI GPT Models</p><span>IBM</span></div>
+      <div class="cert-card glass-card"><div class="cert-icon">⚡</div><p>OpenAI GPT-3 for Developers</p><span>IBM</span></div>
+      <div class="cert-card glass-card"><div class="cert-icon">✨</div><p>Generative Models for Developers</p><span>IBM</span></div>
+      <div class="cert-card glass-card"><div class="cert-icon">💬</div><p>Generative AI Prompt Engineering Basics</p><span>IBM</span></div>
+      <div class="cert-card glass-card"><div class="cert-icon">🌟</div><p>Generative AI Learnathon</p><span>SAWIT.AI</span></div>
+    </div>
+  </div>
+
+  <div class="cert-category reveal">
+    <h3 class="cert-cat-title">AI &amp; Data</h3>
+    <div class="certs-grid">
+      <div class="cert-card glass-card"><div class="cert-icon">📊</div><p>Introduction to Data Science</p><span>IBM</span></div>
+      <div class="cert-card glass-card"><div class="cert-icon">🗣️</div><p>Introduction to Natural Language Processing</p><span>IBM</span></div>
+    </div>
+  </div>
+
+  <div class="cert-category reveal">
+    <h3 class="cert-cat-title">Automation &amp; Cybersecurity</h3>
+    <div class="certs-grid">
+      <div class="cert-card glass-card"><div class="cert-icon">🤝</div><p>Introduction to Robotic Process Automation</p><span>IBM</span></div>
+      <div class="cert-card glass-card"><div class="cert-icon">🛡️</div><p>Tata Cybersecurity Analyst Job Simulation</p><span>Forage / Tata</span></div>
+    </div>
+  </div>
+
+  <div class="cert-category reveal">
+    <h3 class="cert-cat-title">Software Development</h3>
+    <div class="certs-grid">
+      <div class="cert-card glass-card"><div class="cert-icon">🖥️</div><p>Frontend for Java Full Stack Development</p><span>IBM</span></div>
+      <div class="cert-card glass-card"><div class="cert-icon">☕</div><p>Fundamentals of Java Programming</p><span>IBM</span></div>
+      <div class="cert-card glass-card"><div class="cert-icon">🧪</div><p>Test Driven Development in Java for Beginners</p><span>IBM</span></div>
+      <div class="cert-card glass-card"><div class="cert-icon">🏢</div><p>Deloitte Australia Technology Job Simulation</p><span>Forage / Deloitte</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CONTACT ══════════════ -->
+<section id="contact" class="section">
+ 
+  <div class="section-header reveal">
+    <span class="section-tag">🦉 Owl Post</span>
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="title-divider"><span></span><i class="fas fa-star"></i><span></span></div>
+  </div>
+  <div class="contact-wrapper">
+    <div class="contact-info glass-card reveal">
+      <h3>Open to Opportunities</h3>
+      <p>Currently available for exciting roles in technology and design.</p>
+      <div class="open-to">
+        <span>✓ Full Stack Developer</span>
+        <span>✓ Java Developer</span>
+        <span>✓ Software Engineer</span>
+        <span>✓ UI/UX Designer</span>
+        <span>✓ AI &amp; Emerging Tech Roles</span>
+        <span>✓ Graduate Trainee Programs</span>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:sharonponsily@gmail.com" class="contact-item"><i class="fas fa-envelope"></i><span>sharonponsily@gmail.com</span></a>
+        <a href="tel:+918072526175" class="contact-item"><i class="fas fa-phone"></i><span>+91 80725 26175</span></a>
+        <a href="https://github.com/CSharon27" target="_blank" class="contact-item"><i class="fab fa-github"></i><span>github.com/CSharon27</span></a>
+        <a href="https://linkedin.com/in/sharon-ponsily-c" target="_blank" class="contact-item"><i class="fab fa-linkedin-in"></i><span>linkedin.com/in/sharon-ponsily-c</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>
+    ✨ Crafted with magic by
+    <span class="gold-text">Sharon Ponsily C</span>
+    &copy; <script>document.write(new Date().getFullYear())</script>
+  </p>
+  <p class="footer-sub">
+    Developer's Grimoire – Where Code Meets Magic
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
